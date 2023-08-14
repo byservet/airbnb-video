@@ -1,6 +1,7 @@
 'use client'
 
-import {IconType} from 'react-icons'
+import {IconType} from 'react-icons';
+
 interface ButtonProps {
     label: string;
     onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
@@ -19,9 +20,8 @@ const Button: React.FC<ButtonProps> = ({
     icon: Icon /* alias olarak kullandım Icon seklinde diger türlude calısıyor */
 }) => {
     return (
-
         <button
-            onClick={onclick}
+            onClick={onClick}
             disabled={disabled}
             className={`
                 relative
