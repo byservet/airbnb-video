@@ -7,8 +7,6 @@ import {toast} from 'react-hot-toast';
 import { SafeUser } from "../types";
 
 import useLoginModal from "./useLoginModal";
-import { divIcon } from "leaflet";
-
 
 interface IUseFavorite {
     listingId: string;
@@ -42,7 +40,7 @@ const useFavorite = ({
         try {
             let request;
             if (hasFavorited) {
-                request = () => axios.delete(`/api/favorites/${listingId}`);
+                request = () => axios.delete(`/api/favorities/${listingId}`);
             } else {
                 request = () => axios.post(`/api/favorities/${listingId}`);
             }
