@@ -40,7 +40,6 @@ const LoginModal = () => {
     });
 
     const onSubmit: SubmitHandler<FieldValues> = (data) => {
-        console.log("dfd");
         setIsLoading(true);
 
         signIn('credentials', {
